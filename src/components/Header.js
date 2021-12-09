@@ -7,7 +7,9 @@ import { useSelector } from 'react-redux'
 
 function Header() {
   const [burgerStatus, setBurgerStatus] = useState(false)
+  
   const cars = useSelector(selectCars)
+  
 
   return (
     <Container>
@@ -21,7 +23,6 @@ function Header() {
             </a>
           ))}
       </Menu>
-
       <RightMenu>
         <a href='#'>Shop</a>
         <a href='#'>Tesla Account</a>
